@@ -1,17 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="calculator">
-        <input type="text" id="display" class="calculator-screen" value="" disabled>
+<!DOCTYPE html> <!--Esta etiqueta indica el tipo de archivo o sea html-->
+<html lang="en"><!--Esta etiqueta indica el lenguaje del documento, "en" de ingles-->
 
+<head> <!-- es el encabezado de la pagina en donde van algunos datos que no ve el usuario pero son importantes-->
+    <!--La etiqueta meta controlan cómo deben rastrear e indexar el contenido los buscadores.-->
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--este apartado da otra vista para moviles-->
+    <title>Calculadora</title><!-- title coloca el titulo de la pagina que se muestra en el navegador-->
+    <link rel="stylesheet" href="style.css"> <!--Esta etiqueta llama un css exteno para darle estilo a la pagina-->
+</head>
+
+<body> <!--Se trata de todo el cuerpo donde estara el contenido de la pagina-->
+    <div class="calculator"> <!--El div es solo un contenedor-->
+        <input type="text" id="display" class="calculator-screen" value="" disabled> <!--El input es donde el usuario o el sistema ingrese datos al programa-->
+        <!--en el caso del imput de arriba esta bloqueado para que no se ingresen datos de manera manual, sino para que se vea afectado por las funciones del js-->
         <div class="calculator-buttons">
-            <button class="button" onclick="clearDisplay()">C</button>
+            <button class="button" onclick="clearDisplay()">C</button> <!--button es un... boton, lo interesante es que al hacer CLICK esta llamando una funcion que debe estar en el js-->
             <button class="button" onclick="deleteLast()">DEL</button>
             <button class="button" onclick="appendToDisplay('/')">/</button>
             <button class="button" onclick="appendToDisplay('*')">*</button>
@@ -36,6 +39,6 @@
         </div>
     </div>
 
-    <script src="script,js"></script>
+    <script src="script,js"></script> <!--aqui es 1 de 2 o lo usas para escribir codigo js o haces referencia a un archivo js de otra carpeta-->
 </body>
 </html>
