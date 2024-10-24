@@ -16,6 +16,8 @@ console.log(array["3"]);
 
 //tabla de multiplicar
 
+
+/*
 console.log("TABLAS DE MULTIPLICAR DEL 5");
 
 let multilicador = []
@@ -41,5 +43,19 @@ for (let i = 0; i < 10; i++) {
 }
 
 console.log("fin")
+*/
 
+//ELIMINAR ELEMENTOS DE UN ARRAY
+
+
+let array = ["dato1","dato2","dato3"];
+
+array.push("dato4");
+console.log(array[3]);
+
+//eliminar
+array.splice(1,1);
+console.log(array);
+
+/*tareas o no se, la proximaclase se germina el ejercisio XD */
 
